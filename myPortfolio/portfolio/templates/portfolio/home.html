@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<script type = "text/javascript">
+			function goToProjects(){
+				location.href = "http://localhost:8080/projects/";
+			}
+			function goToAbout(){
+				location.href = "http://localhost:8080/about/";
+			}
+		</script>
+		<style type = "text/css">
+			body {
+				background-color:rgb(0, 154, 255);
+				background-image:url("static/portfolio/images/images(21).jpeg");
+				}
+			button {
+				background-color:rgb(0, 255, 154);
+				border:none;
+				padding:10px 20px 10px 20px;
+				border-radius:20px;
+				font-size:16px;}
+			#homeButton {
+				background-color:rgb(0, 0, 0);
+				color:rgb(255, 255, 255);
+				}
+			#myName {
+				padding:0px 5px 0 20px;
+				border-radius:20px;
+				height:40px;
+				background-color:rgb(220, 220, 220);
+				width:400;
+				margin:5px auto 5px auto;}
+			#top {
+				height:40%;}
+			#middle {
+				height:20%;}
+			#bottom {
+				height:40%;}
+			#form {	
+				width:300px;
+				margin:auto auto auto auto;}
+		</style>
+	</head>
+	<body>
+		<div id="homePage">
+			<div id = "top">
+			</div>
+			<div id="myName">
+				<h1>Goodwill Sakhile Shabangu</h1>
+			</div>
+			<div id = "middle">
+				<form id="form">
+					<button id="homeButton" type = "button">
+						Home
+					</button>
+					<button type = "button" onclick = "goToProjects()">
+						Projects
+					</button>
+					<button type = "button" onclick = "goToAbout()">
+						About
+					</button>
+				</form>
+			</div>
+			<div id = "bottom">
+			</div>
+		</div>
+	</body>
+</html>
